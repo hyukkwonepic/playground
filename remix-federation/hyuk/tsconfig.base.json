@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@hyuk/libs/login": ["libs/login/src/index.ts"],
+      "@hyuk/libs/login/server": ["libs/login/src/server.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
