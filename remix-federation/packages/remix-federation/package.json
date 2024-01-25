@@ -1,0 +1,43 @@
+{
+  "name": "remix-federation",
+  "version": "0.1.0",
+  "description": "Vite plugin for Remix native module federation using import maps",
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "src/index.ts",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrestall/remix-federation.git"
+  },
+  "keywords": [
+    "remix",
+    "vite",
+    "module federation",
+    "microfrontend"
+  ],
+  "author": {
+    "name": "James Restall",
+    "url": "https://github.com/jrestall"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrestall/remix-federation/issues"
+  },
+  "homepage": "https://github.com/jrestall/remix-federation#readme",
+  "peerDependencies": {
+    "@remix-run/react": ">= 2.1.0",
+    "@softarc/native-federation": ">= ^2.0.4",
+    "@softarc/native-federation-runtime": ">= ^2.0.4"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-commonjs": "^1.0.3",
+    "magic-string": "^0.30.5",
+    "vite": "^4.5.0",
+    "vite-plugin-externalize-dependencies": "^0.10.0"
+  }
+}

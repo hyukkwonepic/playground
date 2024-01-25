@@ -1,0 +1,36 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Default",
+    
+    "compilerOptions": {
+        "types": ["@remix-run/node", "@remix-run/dev"],
+        "composite": false,
+        "declaration": true,
+        "declarationMap": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "inlineSources": false,
+        "isolatedModules": true,
+        "moduleResolution": "node",
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "preserveWatchOutput": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "paths": {
+          "remix-federation": [
+            "../../packages/remix-federation/src/index.ts"
+          ],
+          "remix-federation/vite": [
+            "../../packages/remix-federation/src/vite.ts"
+          ],
+          "remix-federation/runtime": [
+            "../../packages/remix-federation/src/runtime.ts"
+          ]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
