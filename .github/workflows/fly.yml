@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: flyctl deploy --config ./nextjs-tutorial/nextjs-dashboard/fly.toml --dockerfile ./nextjs-tutorial/nextjs-dashboard/Dockerfile --remote-only
+      - run: flyctl deploy ./nextjs-tutorial/nextjs-dashboard --remote-only
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
